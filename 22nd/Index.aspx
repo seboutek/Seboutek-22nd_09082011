@@ -1,0 +1,221 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Index.aspx.vb" Inherits="Index" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Meddon' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="og:title" content="22nd North Carolina Infantry Regiment" />
+    <meta property="og:type" content="non_profit" />
+    <meta property="og:url" content="http://www.22ndnorthcarolina.com/" />
+    <meta property="og:image" content="http://www.22ndnorthcarolina.com/sitebuildercontent/sitebuilderpictures/.pond/logo2.jpg.w300h253.jpg" />
+    <meta property="og:site_name" content="22nd North Carolina Infantry Regiment Reenactment Official Page" />
+    <meta property="fb:admins" content="1487762623,1348972411" />
+    <title>22nd NC Infantry | Home</title>
+    <meta name="description" content="Civil War Reenactment Regiment. A comprehensive site that includes historical resources, photos, narratives, articles, schedules, rosters, and more." />
+    <meta name="keywords" content="26th, Regiment, North, Carolina, Troops, Civil, War, Infantry, History, Reenactor, Reenacting, Reenactment, Living, History, Confederate, Union, Federal, army, musket, war between the states, civil war, 26th, Regiment, North, Carolina, Troops, Civil, War, Infantry, History, Reenactor, Reenacting, Reenactment, Living, History, Confederate, Union, Federal, army, musket, war between the states, civil war, battles, battle, old north state, regimental, history, Zebulon, Vance, Burqwyn, Lane, Boy Colonel, 26 NCT, Regiment
+    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="author" content="Robert Woodson">
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/Aspstyle.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <script src="js/libs/modernizr-1.7.min.js"></script>
+  </head>
+   
+     
+  <body> 
+  <form id="form1" runat="server">
+    <div>
+     <div class="login" align="right">
+     <asp:Label ID="lblusername" runat="server" Text="User Name: "></asp:Label>
+     <asp:TextBox ID="txtusername" Width="100px" runat="server"></asp:TextBox>
+      &nbsp;
+     <asp:Label ID="lblpwd" runat="server" Text="Password: "></asp:Label>
+     <asp:TextBox ID="txtpwd" Width="100px" runat="server" TextMode="password"></asp:TextBox>
+     
+     <asp:Button  ID="btnSubmit" runat="server" Text="Login" />
+     </div>
+    <div class="container_12">
+      <header>
+        <img title="North Carolina Memorial and 22nd NC Flag" alt="Banner of:North Carolina Memorial and 22nd NC Flag" src="img/22ndBanner1.jpg" />
+        <div class="ribbon-wrapper">
+          <div class="ribbon-front">
+            <nav>
+              <ul id="HDropdown">
+                <li><img class="lft-star" title="star" alt="star graphics" src="img/star.png" /></li>
+                <li><a class="arrow" href="Index.aspx">Home</a>
+                <ul>
+                    <li><a href="members.html">Members</a></li>
+                  </ul>
+                </li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="news.html" href="news.html">News</a>
+                  <ul>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="schedules.html">Schedules</a></li>
+                    <li><a href="colCorner.html">Colonel's Corner</a></li>
+                  </ul>
+                </li>
+                <li><a class="arrow" href="aboutUs.html">About Us</a>
+                  <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="comStaff.html">Command Staff</a></li>
+                    <li><a href="memPage.html">Memorial Page</a></li>
+                  </ul>
+                </li>
+                <li><a class="arrow" href="recruitment.html">Recruitment</a>
+                  <ul>
+                    <li><a href="bylaws.html">By-laws</a></li>
+                  </ul>
+                </li>
+                <li><a class="arrow" href="Contact.aspx">Contact Us</a>
+                  <ul>
+                    <li><a href="links.html">Links</a></li>
+                  </ul>
+                </li>
+                <li><img class="rght-star" title="star" alt="star graphics" src="img/star.png" /></li>
+              </ul>
+            </nav>
+          </div>
+            <div class="ribbon-edge-topleft"></div>
+            <div class="ribbon-edge-topright"></div>
+            <div class="ribbon-edge-bottomleft"></div>
+            <div class="ribbon-edge-bottomright"></div>
+            <div class="ribbon-back-left"></div>
+            <div class="ribbon-back-right"></div>
+        </div>
+      </header>
+      <br />
+        <div class="grid_7">
+          <h1>Welcome to History Reenacted</h1>
+          <hr class="fancy" />
+          <p>Welcome to the official site for The 22nd North Carolina Infantry Regiment.  An outstanding organization of Civil 
+              War Living Historians and Reenactors. We are devoted to telling the story of the Southron Soldier and preserving 
+              the Heritage and Honor of those on whose shoulders we now stand.
+          </p>
+          <br />
+          <p>
+              The 22nd North Carolina Field Command and Company A are based in historic Gettysburg, Pennsylvania with Companies 
+              B and K in North Carolina,  Artillery Company I in West Virginia and Company H in Ohio.   We invite you to explore 
+              our website. Your comments and questions are always welcome.  Contact information is available on the Membership page.
+          </p>
+          <hr class="fancy" />
+        </div>
+        <div class="grid_5">
+          <blockquote>
+            <p class="intro"><span class="bqstart">&#8220 </span><span class="firstletter">N </span>o nation rose so just and fair, None fell so pure of crime
+               Worthy to have lived <span class="amp">&amp;</span> known our gratitude
+               Worthy to be hallowed <span class="amp">&amp;</span> held In tender remembrance
+               Worthy the fadeless fame which Confederate soldiers won
+               Who gave themselves in life <span class="amp">&amp;</span> death for us
+               For the honor of North Carolina For the rights of the States
+               For the liberties of the South For the principles of the Union, 
+               as these were handed down to them,
+               By the fathers of our common Country.
+            </p>
+          </blockquote>
+        </div>
+        <div class="clear"></div>
+        <div class="grid_7">
+          <a href="#"><img class="polaroids" src="img/22ndReg.jpg"  alt="Group Photo of the 22nd" title="Group photo of the 22nd" /></a>
+        </div>
+
+        <div class="clear"></div>
+        <footer>
+          <div class="footer">
+            <div class="grid_4">
+              <img src="img/hat1.gif" title="Confederate Soldier Hat" alt="Clip art of Confederate Hat" />
+              <h2>Our Mission</h2>
+              <hr/>
+              <p>To accurately and honorably portray the lives of the Confederate Soldiers in the 22<sup>nd</sup> North Carolina Infantry Regiment through community educational programs, live demonstations, and battle reenactments.
+                <a href="#">Read Full Mission Statement</a>
+              </p>
+              <div class="cols-corner">
+                <p>Colonel's Corner</p>
+                <img src="img/colonel.png" width="50%" title="Photo of Col. KWS" alt="Photo of Col. KWS"/>
+              </div>
+            </div>
+            <div class="grid_4">
+              <img src="img/cannon_2_lg.gif" title="Confederate Soldier canon" alt="Clip art of Confederate canon" />
+              <h2>Navigate</h2>
+              <hr />
+              <ul>
+                <li><a href="Index.aspx">Home</a>
+                  <ul>
+                    <li><a href="members.html">Members</a></li>
+                  </ul>
+                </li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a>
+                  <ul>
+                    <li><a href="announce.html">Announcements</a></li>
+                    <li><a href="schedules.html">Schedules</a></li>
+                    <li><a href="col-corner.html">Colonel's Corner</a></li>
+                  </ul>
+                </li>
+                <li><a href="aboutus.html">About Us</a>
+                  <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="command.html">Command Staff</a></li>
+                    <li><a href="memorial.html">Memorial Page</a></li>
+                  </ul>
+                </li>
+                <li><a href="recruit.html">Recruitment</a>
+                  <ul>
+                    <li><a href="bylaws.html">By-laws</a></li>
+                  </ul>
+                </li>
+                <li><a href="Contact.aspx">Contact Us</a>
+                  <ul>
+                    <li><a href="links.html">Links</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="grid_4">
+              <img src="img/drum.gif" width="100px" title="Confederate drum" alt="Clip art of Confederate drum"/>
+              <h2>Contact Us</h2>
+              <hr />
+              <form action="default.asp" method="post">
+                <fieldset>
+                  <legend>Message form </legend>
+                  <label for="name">Name:</label><br />
+                  <input type="text"  id="name" name="name"  />
+                  <br />
+                  <label for="email">Email:</label><br />
+                  <input type="text" id="email" name="email" /><br/>
+                  <label for="website">Website:</label><br />
+                  <input type="text" id="website" name="website" value="http://" />
+                  <br />
+                  <label for="comment">Comment:</label><br />
+                  <textarea cols="25" rows="5" name="comment" id="comment">
+                  </textarea>
+                  <br /><label for="submit">Send Comment&nbsp;</label><br />
+                  <input id="submit" name="submit" type="submit" value="submit" />
+                </fieldset>
+              </form>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_12">
+              <hr />
+             <p>All Rights Reserved &copy; Copyright 2011</p>
+             <p>Created By: &nbsp;<a href="http://www.seboutek.com">SebouTek.com</a></p>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </footer>
+    </div>
+
+    </div>
+    &nbsp;</form>
+      &nbsp;
+</body>
+</html>

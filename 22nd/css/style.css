@@ -1,0 +1,508 @@
+/**    
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
+
+ins { 
+  background-color: #0ff; 
+  color: #000; text-decoration: none;}
+
+mark { 
+  background-color: #0ff; 
+  color: #000; 
+  font-style: italic; 
+  font-weight: bold;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] { 
+  border-bottom: 1px dotted; 
+  cursor: help;}
+
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0;}
+
+hr { 
+  display: block; 
+  height: 1px; 
+  border: 0; 
+  border-top: 1px solid #ccc; 
+  margin: 1em auto; 
+  padding: 0;}
+
+input, select {vertical-align: middle;}
+
+html { 
+  overflow-y: scroll; /* Always force a scrollbar in non-IE */
+  font-size:100%; /* Use 16px as per http://www.informationarchitects.jp/en/100e2r/ and http://www.wilsonminer.com/posts/2008/oct/20/relative-readability/ */
+	font-family:Calibri, "Helvetica Neue", Arial, sans-serif; /* Swap these two lines around to switch between serif and sans */
+	font-family:Cambria, Georgia, "Times New Roman", serif; /* Swap these two lines around to switch between serif and sans */
+	line-height:1.5;}
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* Colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid {
+  border-radius: 1px; 
+  -moz-box-shadow: 0px 0px 5px red; 
+  -webkit-box-shadow: 0px 0px 5px red; 
+  box-shadow: 0px 0px 5px red;}
+  
+::-moz-selection{background: #FF3333; color:#fff; text-shadow: none;}
+::selection {background:#FF3333; color:#fff; text-shadow: none;}
+  
+a:link {-webkit-tap-highlight-color: #FF3333;}
+  
+button {width: auto; overflow: visible;}
+  
+img{
+  max-width:100%;
+	height:auto;
+	/* Give it some text styles to offset alt text */
+	font-style:italic;
+	color:#ccc;}
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+a:visited{opacity:0.8;} /* A bit basic, but it’s a bare minumum... */
+
+a:hover{text-decoration:underline;}
+a:active, a:focus{position:relative; top:1px;}/* Give clicked links a depressed effect. */
+  
+body { 
+  font:16px/1.5 sans-serif; 
+  *font-size:small; 
+  min-width: 960px;	
+  min-height:100%; 
+  background-color:#536878; 
+  background-image:url("../img/background.jpg"); 
+  background-repeat: no-repeat; 
+  background-position: top left; 
+  background-attachment: fixed; 
+  margin-top:20px; 
+  padding:0; 
+  font-family:Arial, Helvetica, sans-serif;} 
+
+select, input, textarea, button {font:99% sans-serif;}
+  
+/*grid*/
+.container_12{
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  background-color:#e7e3ca;
+  -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.55);
+  -khtml-box-shadow: 0px 0px 7px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.55);
+  -o-box-shadow: 0px 0px 7px rgba(0,0,0,0.55);}
+  
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6,
+.grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;}
+  
+.container_12 .grid_1 {width: 60px;}
+
+.container_12 .grid_2 {width: 140px;}
+
+.container_12 .grid_3 {width: 220px;}
+
+.container_12 .grid_4 {width: 300px;}
+
+.container_12 .grid_5 {
+  width: 380px;
+  background-color:#fff;
+  color:#444;}
+
+.container_12 .grid_6 {width: 460px;}
+
+.container_12 .grid_7 {
+  width: 540px; 
+  color:#444;}
+
+.container_12 .grid_8 {width: 620px;}
+
+.container_12 .grid_9 {width: 700px;}
+
+.container_12 .grid_10 {width: 780px;}
+
+.container_12 .grid_11 {width: 860px;}
+
+.container_12 .grid_12 {width: 940px;}
+
+/*CSS Dropdown Menu*/     
+#HDropdown  { 
+  margin:0 0 0 125px; 
+  padding:0px; 
+  list-style:none; 
+  height:29px; 
+  width:90%;  
+  border-width:1px 1px 1px 0;}
+  
+#HDropdown li{
+  display:inline; 
+  position:relative; 
+  float:left;}
+  
+#HDropdown li a { 
+  display:block; 
+  float:left; 
+  height:38px; 
+  line-height:29px; 
+  padding:1px 25px; 
+  text-decoration:none; 
+  color:#f7f4e3; 
+  font-weight:normal; 
+  font-size:12px; 
+  border-left:solid 1px #f7f4e3;}
+  
+.arrow {
+  background-image: url(../img/vert_white_menu_arrow.gif);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  padding: 5px 16px 5px 10px;}
+  
+#HDropdown li a:hover {color:#a9401b; background:#f7f4e3;}
+  
+#HDropdown li ul { 
+  margin:0; padding:0 5px; line-height:none; position:absolute; top:40px; left:0; border:solid 1px #c93300;
+  border-width:0px 1px 1px 1px; width:180px; display:none; background:#f7f4e3;
+  -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  -khtml-box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  -o-box-shadow: 2px 2px 2px rgba(0,0,0,0.25);}
+  
+#HDropdown li:hover ul {display:block;}
+  
+#HDropdown li:hover a {color:#a9401b; background:#f7f4e3;}
+  
+#HDropdown li ul li {  
+  display:block;  
+  border-bottom:solid 1px #dbdcd9; 
+  width:90%; 
+  background:url(../img/d_horizontal_red_classic_menu_arrow.gif) no-repeat 3px 12px; 
+  padding:0 0 0 10px;}
+  
+#HDropdown li ul li:last-child {border-bottom:0px;}
+
+#HDropdown li ul a { 
+  border-width:0px; 
+  color:#15162a; 
+  padding:0 5px 0 0; 
+  background-color:transparent;}
+  
+#HDropdown li:hover ul li a {color:#15162a}
+
+#HDropdown li ul li a:hover {color:#a9401b}
+  
+/*CSS Striped Ribbon*/
+.ribbon-wrapper {position: relative;}
+  
+.ribbon-front {
+  background-color: #15162a;	
+  height: 29px;
+  border-top:11px solid #f7f4e3;
+  border-bottom:11px solid #f7f4e3;
+  width: 990px;
+  position: relative;
+  left:-15px;
+  z-index: 2;}
+
+.ribbon-front, .ribbon-back-left, .ribbon-back-right{
+  -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);}
+
+.ribbon-edge-topleft, .ribbon-edge-topright, .ribbon-edge-bottomleft, .ribbon-edge-bottomright {
+  position: absolute;
+  z-index: 1;
+  border-style:solid;
+  height:0px;
+  width:0px;}
+
+.ribbon-edge-bottomleft, .ribbon-edge-bottomright {top: 51px;}
+
+.ribbon-edge-topleft, .ribbon-edge-bottomleft {
+  left: -15px;
+  border-color: transparent #99c transparent transparent;}
+
+.ribbon-edge-topleft {top: 0px; border-width: 0px 10px 0 0;}
+
+.ribbon-edge-bottomleft {border-width: 0 10px 10px 0;}
+
+.ribbon-edge-topright, .ribbon-edge-bottomright {
+  right: -15px;
+  border-color: transparent transparent transparent #99c;}
+
+.ribbon-edge-topright {top: 0px; border-width: 0px 0 0 10px;}
+
+.ribbon-edge-bottomright {border-width: 0 0 10px 10px;}
+
+.ribbon-back-left {
+  position: absolute;
+  top: 10px;
+  left: -45px;
+  width: 40px;
+  height: 29px;
+  background-color: #15162a;	
+  z-index: 0;
+  border-top:11px solid #f7f4e3;
+  border-bottom:11px solid #f7f4e3;}
+
+.ribbon-back-right {
+  position: absolute;
+  top: 10px;
+  right: -45px;
+  width: 40px;
+  height: 29px;
+  background-color: #15162a;	
+  z-index: 0;
+  border-top:11px solid #f7f4e3;
+  border-bottom:11px solid #f7f4e3;}
+
+a:hover, a:active {outline: none;}
+  
+ hr{
+  color:#fff;
+  width:75%;
+  margin:25px auto 5px auto;}
+  
+hr.fancy {
+  width:350px; 
+  height:24px; 
+  border:none; 
+  color:#ccc; 
+  background:rgba(255,255,255, .0) url("../img/paragraph-break.png") no-repeat scroll center;
+  border:none;
+  margin: 1em auto 1em auto;}
+  
+h1, h2, h3, h4, h5, h6 { 
+  font-weight: bold;
+  color:#900;
+  margin:0 10px 0 10px;}
+  
+blockquote{
+  padding-left:1em;
+  padding-right:2.5em;
+  margin:2.5em 2em;
+	text-indent:-0.4em;} /* Hang that punctuation */
+
+blockquote b, blockquote p{
+  font:italic 1.2em/1.6 Geogia, "Times New Roman", Times, serif;
+  text-indent:0.5em;}
+    
+blockquote {display:block;}/* Mark the source up with either a <b> or another element of your choice with a class of source. */
+  
+p {
+  font-family: 'Droid Serif', serif;
+	font-size:1em;			/* 16px */
+  margin:0 15px 0 15px;
+	margin-bottom:0.25em;	/* 24px */
+	line-height:1.9em;		/* 48px */
+  text-shadow: 0px 1px 0px #fff;
+  font-weight:bold;}
+  
+p.intro .firstletter {
+  font-size : 300%;
+  float : left;
+  color : #900;
+  margin-bottom:-25px;
+  margin-top:-15px;
+  text-shadow: 0px 0px 1px #900;}
+ 
+ .bqstart {
+  float:left;
+  font-size: 350%;
+  color: #15162a;
+  margin-left:-46px;
+  margin-top:-24px;
+  text-shadow: 0px 0px 1px #15162a;} 
+  
+h1{
+  font-family: 'Droid Serif', serif;
+	font-size:2em;			/* 32px */
+	margin-bottom:0.75em;	/* 24px */
+	line-height:1.5;		/* 48px */
+  color:#15162a;
+  text-shadow: 0px 0px 1px #15162a;
+  text-align:center;}
+  
+h2{
+  font-family: 'Meddon', cursive;
+	font-size:1.5em;		/* 24px */
+	margin:1em 0 1em 0;		/* 24px */
+	line-height:1;			/* 24px */
+  text-align:center;
+  color:#eee;}
+  
+h3{
+	font-size:1.25em;		/* 20px */
+	margin-bottom:1.2em;	/* 24px */
+	line-height:1.2;		/* 24px */}
+  
+h4{
+	font-size:1.125em;		/* 18px */
+	margin-bottom:1.333em;	/* 24px */
+	line-height:1.333;		/* 24px */}
+  
+h5{font-weight:bold;}
+  
+h5, h6{
+	font-size:1em;			/* 16px */
+	margin-bottom:1.5em;	/* 24px */
+	line-height:1.5;		/* 24px */}
+
+.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+  font-weight: bold;}
+
+img{margin-bottom:-10px;}
+  
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;}
+
+/*Facebook Plugins*/
+.social {
+  background-color:#e7e3ca;
+  margin:0 5px 0 5px; padding:0 5px 0 5px;}
+   
+/*Polaroids Pic affect*/
+img.polaroids{float: left;
+	padding: 10px 10px 25px 10px;
+	background: #fff;
+	border: 1px solid #eee;
+  width:100%;
+  position:relative;
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  margin-bottom:25px;}
+  
+a:hover img.polaroids{
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.66);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.66);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -webkit-transform: scale(1.66);
+  -moz-transform: scale(1.66);
+  position: relative;
+  left:190px;
+  bottom:100px;
+  z-index: 5;}
+
+li {list-style: none;}
+
+a {text-decoration:none;}
+  
+ul li{display:block;}
+
+
+  
+sup {top: -0.5em;}
+
+.rght-star, .lft-star{margin:.125em;}
+
+.lft-star{padding-right:15px;}
+
+/*Forms*/ 
+fieldset{
+	padding:10px;
+	border:1px solid #ccc;
+	margin-bottom:2em;}
+  
+label{
+	display:block;
+	cursor:pointer;
+  margin-bottom:-25px;}
+  
+label:after{content:":";}
+
+label::after{content:":";}
+
+input,textarea{
+	font-family:inherit;
+	font-size:1em;
+	line-height:1.5;
+  margin-bottom:10px;}
+
+/*Footer*/
+.footer {
+  margin:15px 0 4px 0;
+  width:960px;
+  color:#daad64;
+  background-color:#900;
+  text-align:left;
+  -moz-box-shadow: inset 0px 10px 10px rgba(0,0,0,0.25);
+  -khtml-box-shadow: inset 0px 10px 10px rgba(0,0,0,0.25);
+  -webkit-box-shadow:inset 0px 10px 10px rgba(0,0,0,0.25);
+  -o-box-shadow: inset 0px 10px 10px rgba(0,0,0,0.25);}	
+.footer .grid_4 hr{margin-top:-1.5em;}
+  
+.footer p{
+  color:#daad64;
+  text-shadow: 0px 0px 0px #fff;
+  font-weight:normal;}
+
+  
+.footer img{margin:15px 0 0 100px;}  
+  
+.footer a{
+  color:#f7f4e3;
+  margin:0;}
+  
+.footer ul{margin:.25em 0 0 2.25em;}
+
+
+.footer .grid_12 p{text-align:center;}
+
+.cols-corner{
+  background-image:url("../img/torn-paper-a.png"); 
+  background-repeat: no-repeat; height:300px;}
+  
+ .cols-corner p{
+  color:#900; 
+  margin-left:45px; 
+  margin-top:10px;}
+  
+.cols-corner img{margin-top:30px; margin-left:30px;}
